@@ -1,0 +1,6 @@
+[submodule "uask-app"]
+	path = uask-app
+	url = https://github.com/u-ask/uask-app.git
+[submodule "uask-sys"]
+	path = uask-sys
+	url = https://github.com/u-ask/uask-sys.git
