@@ -4,14 +4,14 @@
   "description": "DSL based custom forms system",
   "author": "",
   "scripts": {
-    "setup": "npm run install ; npm run config ; npm run build ; npm run db",
-    "install-modules": "git submodule update --init ; git submodule foreach npm ci",
+    "setup": "npm run inst ; npm run config ; npm run build ; npm run db",
+    "inst": "git submodule update --init ; git submodule foreach npm ci",
     "db": "cd uask-sys; APP_ENV=demo npm run migrate ; APP_ENV=demo npm run seed",
     "config": "cp _app.env ./uask-app/.env ; cp _sys.env ./uask-sys/.env",
     "build": "cd uask-app ; ./node_modules/.bin/vue-cli-service build",
     "start": "npm run start-sys & npm run start-app",
-    "start-sys": "cd uask-sys ; NODE_ENV=demo npm run start",
-    "start-app": "cd uask-app ; npm run start"
+    "start-sys": "cd uask-sys ; NODE_ENV=demo node -r dotenv/config dist/server/index.js",
+    "start-app": "cd uask-app ; node ./server.js"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
