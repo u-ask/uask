@@ -55,8 +55,10 @@ npm run start
 ```
 Now navigate to the demo application : http://localhost:8080/Demo-eCRF.
 
-_*Node:*_ a demo specific login screen is displayed: choose the role to connect with. A sandard sign in flow is used in production mode.
-
 The relevant sections for start steps in submodule documentations are :
  - [U-ASK Management System](https://github.com/u-ask/uask-sys#starting-the-server): a backend server and a client library.
  - [U-ASK Web Application](https://github.com/u-ask/uask-app#serve-the-application): a frontend web application.
+
+_*Node:*_ a demo specific login screen is displayed: choose the role to connect with. A regular authorization code flow is used in production mode.
+
+For a (very) brief introduction to the U-ASK web application see the [How to use section of U-ASK Web Application](https://github.com/u-ask/uask-app#how-to-use).
