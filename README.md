@@ -4,9 +4,16 @@ U-ASK is a solution that allows users to develop complex custom forms. It has tw
  - [U-ASK Management System](https://github.com/u-ask/uask-sys#readme): a backend server and a client library.
  - [U-ASK Web Application](https://github.com/u-ask/uask-app#readme): a frontend web application.
  
-This repository's goal is to demonstrate the fonctionning of U-ASK. For a more advanced usage, refer to the documentation of the component repositories given above.
+This repository's goal is to demonstrate the fonctionning of U-ASK. For a more advanced usage, refer to the dedicated documentation of the two components linked above.
 
-For demonstration purpose the component repositories above are linked to this one as submodules.
+For demonstration purpose the repositories of the backend and frontend are mounted to this one as submodules.
+
+The demo is organized in five steps :
+  - [Install](#install): install the dependencies of both components.
+  - [Configure](#configure): set the environment.
+  - [Build](#build): build the static frontend (with the configured environment).
+  - [Database setup](#database-setup): create the backend database tables.
+  - [Start](#start): start backend and frontend.
 
 # Install
 Initialize the repositories locally :
